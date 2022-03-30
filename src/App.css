@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -18,8 +18,6 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -35,4 +33,36 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.leftpanel {
+  max-height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.leftpanel-row {
+  border: 1px solid rgb(121, 116, 116);
+  border-radius: 5px;
+}
+
+.thumbnail-image {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.item-title {
+  text-align: left;
+  font-size: small;
+}
+
+.loading-msg {
+  text-align: center;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
 }
