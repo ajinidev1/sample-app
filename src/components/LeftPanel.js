@@ -4,7 +4,6 @@ import Thumbnail from "./Thumbnail";
 function LeftPanel(props) {
   const {items, imageSelected} = props;
   const onThumbailCliccked = (index) => {
-    console.log( 'left', index)
     imageSelected(index);
   };
   

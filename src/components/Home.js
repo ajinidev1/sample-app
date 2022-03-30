@@ -8,7 +8,6 @@ function Home() {
   var [searchText, setSearchText] = useState(null);
   const sendDataToParent = (index) => {
     const selectedItem = items.find(i => i.id === index)
-    console.log( 'home', index)
     setSelectedItemUrl(selectedItem?.url);
   };
   useEffect(() => {
